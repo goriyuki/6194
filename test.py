@@ -25,7 +25,7 @@ def draw_dense_layer(ax, cx, cy, width, height, num_points=2000):
     y = cy + height * y_dist
     
     # 计算三角形边界
-    slope = (height * 0.9) / (width / 2)
+    
     boundary_y = cy + height - slope * np.abs(x - cx)
 
     # 筛选出在三角形内部的点
